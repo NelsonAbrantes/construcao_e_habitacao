@@ -12,8 +12,10 @@ $destaques = getTodosDestaques();
         </div>
 
         <div class="row">
-            <div class="col-12 p-0">
+            <div class="col-12 p-0 text-center">
                 
+                <button><a href="novo_destaque.php">Criar destaque</a></button>
+
                 <table>
 
                     <tr>
@@ -35,8 +37,8 @@ $destaques = getTodosDestaques();
                                 <?=substr( $d["texto"],0,50);?> ...
                             </td>
                             <td>
-                                <button><a href="destaques.php">Editar</a></button>
-                                <button><a href="destaques.php">Apagar</a></button>
+                                <button><a href="editar_destaque.php?id=<?= $d["id"];?>">Editar</a></button>
+                                <button><a href="apagar_destaque.php?id=<?= $d["id"];?>">Apagar</a></button>
                             </td>
                         </tr>    
                     <?php endforeach; ?>    

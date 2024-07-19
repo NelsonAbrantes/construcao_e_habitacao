@@ -75,12 +75,13 @@ nav{
 
 /* area bem vindo */
 
-.bem-vindo{
-    height: 669px;
+.bem_vindo{
+    min-height: 669px;
     width: 1110px !important;
     margin-top: 52px;
     display: inline;
     text-align: justify;
+
 }
 h1{
     text-align: center;
@@ -89,10 +90,11 @@ h1{
     line-height: 58px;
     margin-bottom: 64px;
 }
-.p-bemvindo{
+.p_bemvindo{
     font-family: "Poppins-Light";
     font-size: 18px;
-    height: 250px;
+    min-height: 250px;
+    max-width: 80%;
     margin-bottom: 65px;
 }
 .ver_mais_1{
@@ -358,7 +360,7 @@ h1{
         height: 7px !important;
         opacity: 1 !important;
     }
-    .bem-vindo{
+    .bem_vindo{
         height: 669px;
         width: 286px !important;
         margin-top: 30px;
@@ -374,7 +376,7 @@ h1{
         line-height: 30px;
         margin-bottom: 30px;
     }
-    .p-bemvindo{
+    .p_bemvindo{
         text-align: left;
         color: #333333;
         font-family: "Poppins-Light";

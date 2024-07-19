@@ -2,10 +2,10 @@
 
 $menu_atual = "destaques";
 
-require_once("requesitos.php");
+require_once("../requesitos.php");
 
 require("components/header.php");
-require("views/destaque_especifico_view.php");
+require("views/novo_destaque_view.php");
 require("components/footer.php");
 
 ?>

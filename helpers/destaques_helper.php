@@ -2,7 +2,7 @@
 <?php
 
 function getDestaquesHome(){
-    $resultado = selectSQL("SELECT * FROM destaques WHERE max_links =1");
+    $resultado = selectSQL("SELECT * FROM destaques WHERE mostrar =1");
     return $resultado;
 }
 

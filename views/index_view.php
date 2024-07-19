@@ -7,12 +7,12 @@ $quem_somos_home = getQuemSomos();
     
     <main class="container">
         <div class="row justify-content-center">
-            <div class="col-12 bem-vindo d-block">
+            <div class="col bem_vindo" >
                 <div class="separador"></div>
                 <h1>Bem-vindo à<br>Cooperativa de Construção e Habitação Tripeira</h1>
-                <p class="p-bemvindo">
+                <div class="p_bemvindo m-auto">
                     <?= substr($quem_somos_home["texto"],0,600)?>
-                </p>
+                </div>
                 <div class="col text-center">
                     <a href="quem_somos.php" class="buttao"><button class="ver_mais_1">Ver Mais</button></a> 
                 </div>
@@ -30,7 +30,7 @@ $quem_somos_home = getQuemSomos();
                             <img src="<?= $d["imagem"] ?>" class="card-img-top rounded-0" alt="empreend4.png">
                             <div class="card-body">
                                 <h5 class="card-title"><?= $d["titulo"] ?></h5>
-                                <p class="card-text"><?= substr($d["texto"],0,200) ?>...</p>
+                                <p class="card-text"><?= substr($d["texto"],0,200)?>(...)</p>
                                 <div class="btn_container">
                                     <a href="destaque_especifico.php?id=<?= $d["id"] ?>"><button class="ver_mais_2">Ver Mais</button></a> 
                                 </div> 

@@ -7,11 +7,17 @@ if($form){
     $imagem = $_GET["imagem"];
     $texto = $_GET["texto"];
     iduSQL("UPDATE `quem_somos` SET `imagem` = '$imagem', `texto` = '$texto'");
-    header("Location: ../views/quem_somos_view.php");
+    header("Location: quem_somos.php");
 }
 
 
 ?>
+
+    <script>
+      tinymce.init({
+        selector: '#texto',
+      });
+    </script>
 
     <main class="container-fluid">
         <div class="row">
@@ -24,12 +30,18 @@ if($form){
             <form class="col-12 text-center">
                 
                 <label for="imagem">Imagem</label>
+                <br>
                 <input type="text" name="imagem" value="<?= $quem_somos["imagem"];?>">
 
                 <br>
 
+                <a href="http://localhost/construcao_e_habitacao/backoffice/tinyfilemanager/tinyfilemanager.php?p=" target="_blank">Gestor de Ficheiros</a>
+
+                <br>
+
                 <label for="texto">Texto</label>
-                <textarea type="text" name="texto" value="<?= $quem_somos["texto"];?>"></textarea>
+                <br>
+                <textarea type="text" id="texto" name="texto" ><?= $quem_somos["texto"];?></textarea>
 
                 <br>
 

@@ -13,8 +13,10 @@ $empreendimentos = getEmpreendimentos();
         </div>
 
         <div class="row">
-            <div class="col-12 p-0">
+            <div class="col-12 p-0 text-center">
                 
+                <button><a href="novo_empreendimento.php">Criar empreendimento</a></button>
+
                 <table>
 
                     <tr>
@@ -36,8 +38,8 @@ $empreendimentos = getEmpreendimentos();
                                 <?=substr( $e["texto"],0,50);?> ...
                             </td>
                             <td>
-                                <button><a href="destaques.php">Editar</a></button>
-                                <button><a href="destaques.php">Apagar</a></button>
+                                <button><a href="editar_empreendimento.php?id=<?= $e["id"];?>">Editar</a></button>
+                                <button><a href="apagar_empreendimento.php?id=<?= $e["id"];?>">Apagar</a></button>
                             </td>
                         </tr>    
                     <?php endforeach; ?>       

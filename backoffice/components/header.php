@@ -10,7 +10,11 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
         <!-- CSS -->
+        <link rel="stylesheet" href="../fonts/fonts.css">
         <link rel="stylesheet" href="../css/backoffice.css">
+
+        <!-- JS tinymce -->
+        <script src="https://cdn.tiny.cloud/1/pha3vde2x5mkh05flvoh9g31o99cncha1jgkl14rvqb27nke/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
 
     </head>
     <body>
@@ -27,7 +31,7 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+                                        <a class="nav-link <?= $ == 'home' ? 'active' : '' ?>" aria-current="page" href="index.php">Home</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="quem_somos.php">Quem Somos</a>
