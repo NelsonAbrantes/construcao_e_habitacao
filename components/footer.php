@@ -60,7 +60,7 @@ $contactos = getContactos();
                             <li class="nav-item"><a class="nav-link menus_bot" href="destaques.php">DESTAQUES</a></li>
                             <li class="nav-item"><a class="nav-link menus_bot" href="#" onclick="abrirMenu()">EMPREENDIMENTOS</a></li>
                             <li class="nav-item"><a class="nav-link menus_bot" href="#">CENTRO DE FÉRIAS</a></li>
-                            <li class="nav-item"><a class="nav-link menus_bot" href="contactos.php">CONTACTOS</a></li>
+                            <li class="nav-item"><a class="nav-link menus_bot" href="#contactos">CONTACTOS</a></li>
                         </ul>
                         
                         <div class="copyright ">

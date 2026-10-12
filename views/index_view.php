@@ -14,7 +14,7 @@ $quem_somos_home = getQuemSomos();
                     <?= substr($quem_somos_home["texto"],0,600)?>
                 </p>
                 <div class="col text-center">
-                    <a href="quem_somos.php" class="buttao"><button class="ver_mais_1">Ver Mais</button></a> 
+                    <a href="quem_somos.php" class="botao"><button class="ver_mais_1">Ver Mais</button></a> 
                 </div>
 
             </div>
@@ -27,7 +27,7 @@ $quem_somos_home = getQuemSomos();
 
                     <?php foreach($destaques_home as $d): ?>
                         <div class="col-3 card rounded-0" style="width: 22rem;">
-                            <img src="<?= $d["imagem"] ?>" class="card-img-top rounded-0" alt="empreend4.png">
+                            <img src="<?= $d["imagem"] ?>" class="card-img-top rounded-0" alt="<?= $d["titulo"] ?>">
                             <div class="card-body">
                                 <h5 class="card-title"><?= $d["titulo"] ?></h5>
                                 <p class="card-text"><?= substr($d["texto"],0,200) ?>...</p>

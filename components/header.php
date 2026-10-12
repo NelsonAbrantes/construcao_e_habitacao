@@ -37,28 +37,28 @@ $empreendimentos = getEmpreendimentos();
                             <div class="collapse navbar-collapse " id="navbarSupportedContent">
                                 <ul class="navbar-nav nav_top p-0">
                                     <li class="nav-item"><a class="nav-link menus_top" href="index.php">HOME</a></li>
-                                    <div class="separador_nav d-lg-none"></div>
+                                    <li class="separador_nav d-lg-none" aria-hidden="true"></li>
                                     <li class="nav-item"><a class="nav-link menus_top" href="quem_somos.php">QUEM SOMOS</a></li>
-                                    <div class="separador_nav d-lg-none"></div>
+                                    <li class="separador_nav d-lg-none" aria-hidden="true"></li>
                                     <li class="nav-item"><a class="nav-link menus_top" href="#">SÓCIOS</a></li>
-                                    <div class="separador_nav d-lg-none"></div>
+                                    <li class="separador_nav d-lg-none" aria-hidden="true"></li>
                                     <li class="nav-item"><a class="nav-link menus_top" href="#">NOTÍCIAS</a></li>
-                                    <div class="separador_nav d-lg-none"></div>
+                                    <li class="separador_nav d-lg-none" aria-hidden="true"></li>
                                     <li class="nav-item"><a class="nav-link menus_top" href="destaques.php">DESTAQUES</a></li>
-                                    <div class="separador_nav d-lg-none"></div>
+                                    <li class="separador_nav d-lg-none" aria-hidden="true"></li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link menus_top"  href="empreendimentos.php" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="dropdown_empreendimentos">EMPREENDIMENTOS</a>
-                                        <div class="separador_nav d-lg-none"></div>
+                                        <li class="separador_nav d-lg-none" aria-hidden="true"></li>
                                         <ul class="dropdown-menu p-0 m-0">
                                             <?php foreach($empreendimentos as $e): ?>
                                                 <li><a class="dropdown-item submenus" href="empreendimentos.php?id=<?=$e['id'];?>"><?=$e['titulo'];?></a></li>
-                                                <div class="separador_dropdown"></div>
+                                                <li class="separador_dropdown" aria-hidden="true"></li>
                                             <?php endforeach; ?>        
                                         </ul>
                                     </li>
                                     <li class="nav-item"><a class="nav-link menus_top" href="#">CENTRO DE FÉRIAS</a></li>
-                                    <div class="separador_nav d-lg-none"></div>
-                                    <li class="nav-item"><a class="nav-link menus_top" href="contatos.php">CONTACTOS</a></li>
+                                    <li class="separador_nav d-lg-none" aria-hidden="true"></li>
+                                    <li class="nav-item"><a class="nav-link menus_top" href="#contactos">CONTACTOS</a></li>
                                 </ul>
                             </div>
                         </div>
